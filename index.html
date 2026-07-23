@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhir Sah | Senior Software Engineer & Full-Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Sudhir Sah - Senior Software Engineer & Full-Stack Developer. Specialized in high-performance web apps, UI/UX, and cutting-edge tech solutions.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sudhir Sah | Senior Software Engineer & Full-Stack Developer">
+    <meta property="og:description"
+        content="Portfolio of Sudhir Sah - Senior Software Engineer & Full-Stack Developer. Specialized in high-performance web apps, UI/UX, and cutting-edge tech solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Intro Loader -->
+    <div id="intro-loader">
+        <div class="loader-ripple"></div>
+        <div class="loader-content">
+            <span class="loader-logo">SUDHIR SAH</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+
+
+    <!-- Particles Background Canvas -->
+    <canvas id="particles-bg-canvas"></canvas>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Hero Scroll Canvas -->
+    <canvas id="hero-scroll-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-text">SUDHIR</span><span class="logo-dot">.</span><span class="logo-sub">SAH</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;"><i
+                        class="fa-solid fa-paper-plane"></i> Hire Me</a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-availability fade-in">Available for Work &bull; Open to Opportunities</span>
+                    <h1 class="fade-in hero-heading-stack">
+                        <span class="hero-sub-title">Hi, I'm Sudhir Sah</span>
+                        <div class="hero-title-group">
+                            <span class="hero-title-main">PRODUCT</span>
+                            <span class="hero-title-sub">DESIGNER</span>
+                        </div>
+                    </h1>
+                    <p class="hero-lead fade-in">
+                        Product Designer &amp; Cloud Engineer. Crafting high-end web experiences in Webflow &amp;
+                        Framer, pixel-perfect UI/UX in Figma, and secure cloud architectures on AWS Cloud.
+                    </p>
+                    <div class="hero-social-links fade-in">
+                        <a href="https://github.com/sudhirshah0" target="_blank" aria-label="GitHub"
+                            class="hero-social-link"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sudhir-sah/" target="_blank" aria-label="LinkedIn"
+                            class="hero-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/sudhirdesign.in/" target="_blank" aria-label="Instagram"
+                            class="hero-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.behance.net/sudhirsah10" target="_blank" aria-label="Behance"
+                            class="hero-social-link"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://wa.me/9779823089616" target="_blank" aria-label="WhatsApp"
+                            class="hero-social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="hero-actions fade-in">
+                        <a href="#portfolio" class="btn btn-primary">Explore Work <i
+                                class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+                    </div>
+                    <div class="hero-quick-stats fade-in">
+                        <div class="stat-item">
+                            <span class="stat-num">1+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Fast Execution</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">AI</span>
+                            <span class="stat-label">Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Image -->
+                <div class="hero-image-wrap fade-in">
+                    <div class="hero-image-glow"></div>
+                    <img src="assets/profile.png" alt="Sudhir Sah" class="hero-profile-img">
+                    <div class="hero-image-fade"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">Who I Am</span>
+                    <h2>About Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info card-glass scroll-reveal stagger-1">
+                        <h3>Product Designer & Cloud Engineer</h3>
+                        <p>I operate at the intersection of product design, frontend engineering, and cloud
+                            architecture. I specialize in building complete digital experiences, leveraging Figma,
+                            Framer, Webflow, HTML, CSS, JavaScript, and AWS Cloud to turn complex ideas into
+                            high-performing web solutions.</p>
+
+                        <div class="collapsible-mobile" id="about-collapse">
+                            <p>By blending modern design systems with robust cloud deployments, I deliver responsive
+                                interfaces that look beautiful and scale seamlessly under high traffic.</p>
+
+                            <div class="strengths-list">
+                                <h4>My Strengths</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Product Design</strong>:
+                                        High-fidelity interactive prototyping &amp; clean layout architecture in Figma.
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i> <strong>No-Code Delivery</strong>:
+                                        Rapid development of responsive, SEO-optimized sites in Webflow &amp; Framer.
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Frontend Engineering</strong>:
+                                        Clean, semantic HTML5, modern layout CSS, and interactive JavaScript.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Cloud Architecture</strong>:
+                                        Deploying and hosting secure, scalable resources on AWS Cloud.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> <strong>End-to-End Execution</strong>:
+                                        Transforming ideas from a visual canvas into a live, cloud-backed app.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <span class="read-more-toggle" data-target="about-collapse">Read More <i
+                                class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+
+                    <div class="about-meta-grid scroll-reveal stagger-2">
+                        <!-- Education Card -->
+                        <div class="card-glass edu-card">
+                            <h3 class="card-heading-icon"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+                            <div class="meta-item">
+                                <span class="meta-duration">2021 - 2025</span>
+                                <h5>B.Tech in Computer Science &amp; Engineering</h5>
+                                <p class="meta-location">Veer Madho Singh Bhandari Uttarakhand Technical University</p>
+                                <p class="meta-location-detail"
+                                    style="font-size:0.75rem; color:var(--accent); margin-top:2px; font-weight:600;"><i
+                                        class="fa-solid fa-award"></i> First Division with Honour</p>
+                            </div>
+
+                            <div class="collapsible-mobile" id="edu-collapse">
+                                <div class="meta-item">
+                                    <span class="meta-duration">2018 - 2020</span>
+                                    <h5>Higher Secondary School</h5>
+                                    <p class="meta-location">Dhanusha Science Secondary School</p>
+                                    <p class="meta-location-detail"
+                                        style="font-size:0.75rem; color:var(--accent); margin-top:2px; font-weight:600;">
+                                        <i class="fa-solid fa-chart-simple"></i> Result: 80.5% Marks
+                                    </p>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-duration">2018</span>
+                                    <h5>Secondary Education (10th / SEE)</h5>
+                                    <p class="meta-location">Siddhartha Shishu Sadan Higher Secondary School</p>
+                                    <p class="meta-location-detail"
+                                        style="font-size:0.75rem; color:var(--accent); margin-top:2px; font-weight:600;">
+                                        <i class="fa-solid fa-chart-simple"></i> Result: 88.75% Marks
+                                    </p>
+                                </div>
+                            </div>
+
+                            <span class="read-more-toggle" data-target="edu-collapse">Read More <i
+                                    class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+
+                        <!-- Languages Card -->
+                        <div class="card-glass lang-card">
+                            <h3 class="card-heading-icon"><i class="fa-solid fa-language"></i> Languages</h3>
+                            <div class="lang-grid">
+                                <div class="lang-item">
+                                    <div class="lang-info">
+                                        <span>English</span>
+                                        <span class="lang-level">Proficient</span>
+                                    </div>
+                                    <div class="lang-dots">
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <div class="lang-item">
+                                    <div class="lang-info">
+                                        <span>Hindi</span>
+                                        <span class="lang-level">Native</span>
+                                    </div>
+                                    <div class="lang-dots">
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                    </div>
+                                </div>
+
+                                <div class="collapsible-mobile" id="lang-collapse" style="width: 100%;">
+                                    <div class="lang-item">
+                                        <div class="lang-info">
+                                            <span>Nepali</span>
+                                            <span class="lang-level">Native</span>
+                                        </div>
+                                        <div class="lang-dots">
+                                            <span class="dot filled"></span>
+                                            <span class="dot filled"></span>
+                                            <span class="dot filled"></span>
+                                            <span class="dot filled"></span>
+                                            <span class="dot filled"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span class="read-more-toggle" data-target="lang-collapse">Read More <i
+                                        class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">Expertise</span>
+                    <h2>Skills &amp; Toolset</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="skills-tab-nav scroll-reveal stagger-1">
+                    <div class="tab-slider-indicator"></div>
+                    <button class="tab-btn active" data-tab="frontend"><i class="fa-solid fa-toolbox"></i> Software
+                        Tools</button>
+                    <button class="tab-btn" data-tab="backend"><i class="fa-solid fa-brain"></i> AI Tools</button>
+                    <button class="tab-btn" data-tab="capabilities"><i class="fa-solid fa-gears"></i>
+                        Capabilities</button>
+                </div>
+
+                <!-- Tab 1: Software Tools -->
+                <div id="skills-tab-frontend" class="skills-tab-content active">
+                    <div class="skills-compact-grid">
+
+                        <!-- Figma -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(162,89,255,0.1);border:1px solid rgba(162,89,255,0.3);color:#a259ff;">
+                                <i class="fa-brands fa-figma"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Figma</h4><span class="skill-tag">UI/UX & Prototyping</span>
+                            </div>
+                        </div>
+
+                        <!-- Webflow -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(67,83,255,0.1);border:1px solid rgba(67,83,255,0.3);color:#4353ff;">
+                                <i class="fa-solid fa-w"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Webflow</h4><span class="skill-tag">No-Code Web Builder</span>
+                            </div>
+                        </div>
+
+                        <!-- Framer -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,85,255,0.1);border:1px solid rgba(0,85,255,0.3);color:#0055ff;">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Framer</h4><span class="skill-tag">Interactive Design</span>
+                            </div>
+                        </div>
+
+                        <!-- VS Code -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,122,204,0.1);border:1px solid rgba(0,122,204,0.3);color:#007acc;">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>VS Code</h4><span class="skill-tag">Code Editor</span>
+                            </div>
+                        </div>
+
+                        <!-- HTML -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(227,79,38,0.1);border:1px solid rgba(227,79,38,0.3);color:#e34f26;">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>HTML5</h4><span class="skill-tag">Web Structure</span>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(38,77,228,0.1);border:1px solid rgba(38,77,228,0.3);color:#264de4;">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>CSS3</h4><span class="skill-tag">Styling & Animations</span>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(247,223,30,0.1);border:1px solid rgba(247,223,30,0.3);color:#f7df1e;">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>JavaScript</h4><span class="skill-tag">Interactive Logic</span>
+                            </div>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(55,118,171,0.1);border:1px solid rgba(55,118,171,0.3);color:#3776ab;">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Python</h4><span class="skill-tag">Scripting & Automation</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS Cloud -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,153,0,0.1);border:1px solid rgba(255,153,0,0.3);color:#ff9900;">
+                                <i class="fa-brands fa-aws"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>AWS Cloud</h4><span class="skill-tag">Cloud Infrastructure</span>
+                            </div>
+                        </div>
+
+                        <!-- DaVinci Resolve -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(219,35,35,0.1);border:1px solid rgba(219,35,35,0.3);color:#db2323;">
+                                <i class="fa-solid fa-film"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>DaVinci Resolve</h4><span class="skill-tag">Video Editing & Grading</span>
+                            </div>
+                        </div>
+
+                        <!-- Canva -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,196,204,0.1);border:1px solid rgba(0,196,204,0.3);color:#00c4cc;">
+                                <i class="fa-solid fa-swatchbook"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Canva</h4><span class="skill-tag">Graphic Design</span>
+                            </div>
+                        </div>
+
+                        <!-- CapCut -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.2);color:#fff;">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>CapCut</h4><span class="skill-tag">Mobile Video Editing</span>
+                            </div>
+                        </div>
+
+                        <!-- Adobe Illustrator -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,154,0,0.1);border:1px solid rgba(255,154,0,0.3);color:#ff9a00;">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Illustrator</h4><span class="skill-tag">Vector & Branding</span>
+                            </div>
+                        </div>
+
+                        <!-- Photoshop -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(49,168,255,0.1);border:1px solid rgba(49,168,255,0.3);color:#31a8ff;">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Photoshop</h4><span class="skill-tag">Photo Compositing</span>
+                            </div>
+                        </div>
+
+                        <!-- Adobe Lightroom -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(173,213,236,0.1);border:1px solid rgba(173,213,236,0.3);color:#add5ec;">
+                                <i class="fa-solid fa-sun"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Lightroom</h4><span class="skill-tag">Photo Editing & Grading</span>
+                            </div>
+                        </div>
+
+                        <!-- PicsArt -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,75,155,0.1);border:1px solid rgba(255,75,155,0.3);color:#ff4b9b;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>PicsArt</h4><span class="skill-tag">Creative Photo Editor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-toggle-wrap">
+                        <button class="btn btn-secondary skills-toggle-btn">
+                            <span>Show More</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 2: AI Tools -->
+                <div id="skills-tab-backend" class="skills-tab-content">
+                    <div class="skills-compact-grid">
+
+                        <!-- Google Antigravity -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(66,133,244,0.1);border:1px solid rgba(66,133,244,0.3);color:#4285f4;">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Google Antigravity</h4><span class="skill-tag">Agentic AI Coding</span>
+                            </div>
+                        </div>
+
+                        <!-- Google Stitch -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(66,133,244,0.1);border:1px solid rgba(66,133,244,0.3);color:#4285f4;">
+                                <i class="fa-solid fa-circle-nodes"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Google Stitch</h4><span class="skill-tag">AI UI Generation</span>
+                            </div>
+                        </div>
+
+                        <!-- Claude AI -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(217,119,6,0.1);border:1px solid rgba(217,119,6,0.3);color:#d97706;">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Claude AI</h4><span class="skill-tag">Advanced Language Model</span>
+                            </div>
+                        </div>
+
+                        <!-- Figma AI -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(162,89,255,0.1);border:1px solid rgba(162,89,255,0.3);color:#a259ff;">
+                                <i class="fa-brands fa-figma"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Figma AI</h4><span class="skill-tag">AI-Powered Design</span>
+                            </div>
+                        </div>
+
+                        <!-- Uizard -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(108,99,255,0.1);border:1px solid rgba(108,99,255,0.3);color:#6c63ff;">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Uizard</h4><span class="skill-tag">AI Wireframing</span>
+                            </div>
+                        </div>
+
+                        <!-- Adobe Firefly -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,107,107,0.1);border:1px solid rgba(255,107,107,0.3);color:#ff6b6b;">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Adobe Firefly</h4><span class="skill-tag">Generative AI Design</span>
+                            </div>
+                        </div>
+
+                        <!-- Canva Magic Studio -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,196,204,0.1);border:1px solid rgba(0,196,204,0.3);color:#00c4cc;">
+                                <i class="fa-solid fa-wand-sparkles"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Canva Magic Studio</h4><span class="skill-tag">AI Creative Suite</span>
+                            </div>
+                        </div>
+
+                        <!-- Google Gemini -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(66,133,244,0.1);border:1px solid rgba(66,133,244,0.3);color:#4285f4;">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Google Gemini</h4><span class="skill-tag">Multimodal AI Model</span>
+                            </div>
+                        </div>
+
+                        <!-- ChatGPT -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(16,163,127,0.1);border:1px solid rgba(16,163,127,0.3);color:#10a37f;">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>ChatGPT</h4><span class="skill-tag">Conversational AI</span>
+                            </div>
+                        </div>
+
+                        <!-- Framer AI -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,85,255,0.1);border:1px solid rgba(0,85,255,0.3);color:#0055ff;">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Framer AI</h4><span class="skill-tag">AI Site Builder</span>
+                            </div>
+                        </div>
+
+                        <!-- Higgsfield -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,69,0,0.1);border:1px solid rgba(255,69,0,0.3);color:#ff4500;">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Higgsfield</h4><span class="skill-tag">AI Video Generation</span>
+                            </div>
+                        </div>
+
+                        <!-- Midjourney -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.2);color:#fff;">
+                                <i class="fa-solid fa-sailboat"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Midjourney</h4><span class="skill-tag">AI Image Generation</span>
+                            </div>
+                        </div>
+
+                        <!-- Kling AI -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,107,53,0.1);border:1px solid rgba(255,107,53,0.3);color:#ff6b35;">
+                                <i class="fa-solid fa-clapperboard"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Kling AI</h4><span class="skill-tag">AI Video Creation</span>
+                            </div>
+                        </div>
+
+                        <!-- Meta AI -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,130,251,0.1);border:1px solid rgba(0,130,251,0.3);color:#0082fb;">
+                                <i class="fa-brands fa-meta"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Meta AI</h4><span class="skill-tag">Social AI Assistant</span>
+                            </div>
+                        </div>
+
+                        <!-- Google AI Studio -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(66,133,244,0.1);border:1px solid rgba(66,133,244,0.3);color:#4285f4;">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Google AI Studio</h4><span class="skill-tag">Gemini API Playground</span>
+                            </div>
+                        </div>
+
+                        <!-- Nano Banana -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,225,53,0.1);border:1px solid rgba(255,225,53,0.3);color:#ffe135;">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Nano Banana</h4><span class="skill-tag">AI Creative Tool</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-toggle-wrap">
+                        <button class="btn btn-secondary skills-toggle-btn">
+                            <span>Show More</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Capabilities -->
+                <div id="skills-tab-capabilities" class="skills-tab-content">
+                    <div class="skills-compact-grid">
+
+                        <!-- Web Development -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,210,255,0.1);border:1px solid rgba(0,210,255,0.3);color:#00d2ff;">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Web Development</h4>
+                            </div>
+                        </div>
+
+
+                        <!-- No-Code Development -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(67,83,255,0.1);border:1px solid rgba(67,83,255,0.3);color:#4353ff;">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>No-Code Development</h4>
+                            </div>
+                        </div>
+
+                        <!-- Prototyping -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.3);color:#a855f7;">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Prototyping</h4>
+                            </div>
+                        </div>
+
+                        <!-- Typography -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,0,127,0.1);border:1px solid rgba(255,0,127,0.3);color:#ff007f;">
+                                <i class="fa-solid fa-font"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Typography</h4>
+                            </div>
+                        </div>
+
+                        <!-- Content Creation -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,107,107,0.1);border:1px solid rgba(255,107,107,0.3);color:#ff6b6b;">
+                                <i class="fa-solid fa-hashtag"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Content Creation</h4>
+                            </div>
+                        </div>
+
+                        <!-- Branding -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,154,0,0.1);border:1px solid rgba(255,154,0,0.3);color:#ff9a00;">
+                                <i class="fa-solid fa-bezier-curve"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Branding</h4>
+                            </div>
+                        </div>
+
+                        <!-- Colour Grading -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,196,204,0.1);border:1px solid rgba(0,196,204,0.3);color:#00c4cc;">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Colour Grading</h4>
+                            </div>
+                        </div>
+
+                        <!-- Videography -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(219,35,35,0.1);border:1px solid rgba(219,35,35,0.3);color:#db2323;">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Videography</h4>
+                            </div>
+                        </div>
+
+                        <!-- Photography -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.2);color:#fff;">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Photography</h4>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Handling -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(0,210,255,0.1);border:1px solid rgba(0,210,255,0.3);color:#00d2ff;">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Social Media Handling</h4>
+                            </div>
+                        </div>
+
+                        <!-- Website Hosting -->
+                        <div class="skill-compact-card card-glass">
+                            <div class="skill-icon FA-icon-wrap"
+                                style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.3);color:#a855f7;">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <div class="skill-details">
+                                <h4>Website Hosting</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="skills-toggle-wrap">
+                        <button class="btn btn-secondary skills-toggle-btn">
+                            <span>Show More</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">My Journey</span>
+                    <h2>Work Experience</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Blinking scroll tracker dot -->
+                    <div class="timeline-scroll-dot"></div>
+                    <!-- Exp Item 1 -->
+                    <div class="timeline-item scroll-reveal stagger-1">
+                        <div class="timeline-marker-logo">
+                            <div class="company-logo-wrap company-initial"
+                                style="background: linear-gradient(135deg, #00d2ff, #a855f7);">
+                                <span>FL</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content card-glass">
+                            <h3>UI/UX &amp; Graphic Designer</h3>
+                            <div class="timeline-location-row">
+                                <h4 class="company-name">Freelance <span class="badge-geo">Remote</span></h4>
+                                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2025 -
+                                    Present</span>
+                            </div>
+                            <p class="timeline-summary" style="margin-top: 12px; margin-bottom: 6px;">Providing
+                                end-to-end user experience, interface design, and branding solutions for global clients.
+                            </p>
+                            <div class="collapsible-mobile" id="exp-details-1">
+                                <ul class="timeline-details">
+                                    <li>Creating high-fidelity wireframes, interactive prototypes, and custom user
+                                        journeys in Figma.</li>
+                                    <li>Designing responsive, modern, and SEO-optimized website layouts and branding
+                                        elements.</li>
+                                    <li>Collaborating directly with clients to turn conceptual ideas into polished,
+                                        high-performing digital designs.</li>
+                                </ul>
+                            </div>
+                            <span class="read-more-toggle" data-target="exp-details-1">Read Details <i
+                                    class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 2 -->
+                    <div class="timeline-item scroll-reveal stagger-2">
+                        <div class="timeline-marker-logo">
+                            <div class="company-logo-wrap company-initial"
+                                style="background: linear-gradient(135deg, #a855f7, #ff007f);">
+                                <span>CC</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content card-glass">
+                            <h3>Self Content Creator</h3>
+                            <div class="timeline-location-row">
+                                <h4 class="company-name">Instagram Creator (1.8K+ Followers) <span
+                                        class="badge-geo">Remote</span></h4>
+                                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2025 -
+                                    Present</span>
+                            </div>
+                            <p class="timeline-summary" style="margin-top: 12px; margin-bottom: 6px;">Sharing
+                                educational and inspirational UI/UX design and graphic design resources online.</p>
+                            <div class="collapsible-mobile" id="exp-details-2">
+                                <ul class="timeline-details">
+                                    <li>Building and managing a growing design community of 1,800+ followers on
+                                        Instagram.</li>
+                                    <li>Creating and publishing high-quality carousels, tips, and tutorials about modern
+                                        design practices.</li>
+                                    <li>Designing visually compelling social media posts and sharing free design
+                                        toolkits and assets.</li>
+                                </ul>
+                            </div>
+                            <span class="read-more-toggle" data-target="exp-details-2">Read Details <i
+                                    class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">Featured Works</span>
+                    <h2>My Projects Portfolio</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- External Links Promo -->
+                <div class="portfolio-external-promo scroll-reveal stagger-1">
+                    <div class="card-glass promo-card card-blue-glow">
+                        <div class="promo-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="promo-text">
+                            <h3>Open Source Work</h3>
+                            <p>Explore my open-source contributions, side projects, and experimental repos on GitHub.
+                            </p>
+                            <a href="https://github.com/" target="_blank" class="btn btn-secondary"><i
+                                    class="fa-brands fa-github"></i> GitHub Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="card-glass promo-card card-purple-glow">
+                        <div class="promo-icon"><i class="fa-brands fa-behance"></i></div>
+                        <div class="promo-text">
+                            <h3>Behance Portfolio</h3>
+                            <p>Explore my interactive case studies, design projects, and visual layouts on Behance.
+                            </p>
+                            <a href="https://behance.net/" target="_blank" class="btn btn-secondary"><i
+                                    class="fa-brands fa-behance"></i> Behance Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Tabs -->
+                <div class="portfolio-tabs fade-in">
+                    <div class="portfolio-slider-indicator"></div>
+                    <button class="portfolio-tab-btn active" data-filter="uiux">UI UX Development</button>
+                    <button class="portfolio-tab-btn" data-filter="graphic">Graphic Design</button>
+                    <button class="portfolio-tab-btn" data-filter="certificates">Certifications</button>
+                </div>
+
+                <div class="portfolio-grid-wrap">
+                    <div class="portfolio-grid">
+                        <!-- UI/UX Project 1: Quick Support Webapp -->
+                        <a href="https://sudhir-quicksupport-app.webflow.io/" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="uiux">
+                            <div class="portfolio-thumb">
+                                <div class="portfolio-card-bg"
+                                    style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+                                    <div class="portfolio-thumb-inner">
+                                        <i class="fa-solid fa-headset portfolio-project-icon"></i>
+                                        <div class="portfolio-project-lines">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-overlay">
+                                    <h4>Quick Support Webapp</h4>
+                                    <p>Instant help via call conferencing &amp; video call tips — built on Webflow.</p>
+                                    <div class="project-tags">
+                                        <span>Webflow</span><span>No-Code</span><span>UI/UX</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            </div>
+                        </a>
+                        <!-- UI/UX Project 2: Shyangbo Mobile Repair Center -->
+                        <a href="https://shyangbomobilerepaircenter.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="uiux">
+                            <div class="portfolio-thumb">
+                                <div class="portfolio-card-bg"
+                                    style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                                    <div class="portfolio-thumb-inner">
+                                        <i class="fa-solid fa-mobile-screen-button portfolio-project-icon"></i>
+                                        <div class="portfolio-project-lines">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-overlay">
+                                    <h4>Shyangbo Mobile Repair Center</h4>
+                                    <p>Comprehensive mobile repairing services landing page with smooth user experience.</p>
+                                    <div class="project-tags">
+                                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            </div>
+                        </a>
+                        <!-- UI/UX Project 3: Dubai Majestic Home -->
+                        <a href="https://dubaimajestichome.vercel.app/" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="uiux">
+                            <div class="portfolio-thumb">
+                                <div class="portfolio-card-bg"
+                                    style="background: linear-gradient(135deg, #b8860b, #e5c158, #8b6508);">
+                                    <div class="portfolio-thumb-inner">
+                                        <i class="fa-solid fa-building-user portfolio-project-icon"></i>
+                                        <div class="portfolio-project-lines">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-overlay">
+                                    <h4>Dubai Majestic Home</h4>
+                                    <p>Luxury Dubai real estate portal showcasing premium properties &amp; residences built with React.</p>
+                                    <div class="project-tags">
+                                        <span>React</span><span>JavaScript</span><span>UI/UX</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            </div>
+                        </a>
+                        <!-- UI/UX Project 2: SkyHome Web -->
+                        <a href="https://github.com/sudhirsah/" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="uiux">
+                            <div class="portfolio-thumb">
+                                <div class="portfolio-card-bg"
+                                    style="background: linear-gradient(135deg, #0d1b3e, #1a3a6b, #1e5fa0);">
+                                    <div class="portfolio-thumb-inner">
+                                        <i class="fa-solid fa-house portfolio-project-icon"></i>
+                                        <div class="portfolio-project-lines">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info-overlay">
+                                    <h4>SkyHome Web</h4>
+                                    <p>Buy, sell and rent homes — clean real estate search engine with premium UI.</p>
+                                    <div class="project-tags">
+                                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-brands fa-github"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- UI/UX Project 3: Coming Soon -->
+                        <div class="portfolio-item card-glass" data-category="uiux">
+                            <div class="portfolio-thumb">
+                                <div class="portfolio-card-bg"
+                                    style="background: linear-gradient(135deg, #1f1c2c, #928dab); display: flex; align-items: center; justify-content: center; height: 220px;">
+                                    <div class="portfolio-thumb-inner" style="text-align: center;">
+                                        <i class="fa-solid fa-hourglass-half portfolio-project-icon" style="font-size: 2.2rem; color: rgba(255,255,255,0.6); margin-bottom: 8px;"></i>
+                                        <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em;">Coming Soon</div>
+                                    </div>
+                                </div>
+                                <div class="project-info-overlay">
+                                    <h4>Next Big Idea</h4>
+                                    <p>A new interactive product interface currently in prototyping stages.</p>
+                                    <div class="project-tags">
+                                        <span>Framer</span><span>Next.js</span><span>UI/UX</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-lock"></i></div>
+                            </div>
+                        </div>
+
+                        <!-- Graphic Design 1: Brand Identity Suite -->
+                        <a href="https://behance.net/" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="graphic" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/graphic_brand_identity.jpg" alt="Brand Identity Suite"
+                                    class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>Brand Identity Suite</h4>
+                                    <p>Premium logos, typography systems &amp; corporate brand collateral.</p>
+                                    <div class="project-tags">
+                                        <span>Branding</span><span>Illustrator</span><span>Vector</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-brands fa-behance"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- Graphic Design 2: Social Media Campaign -->
+                        <a href="https://behance.net/" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="graphic" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/graphic_social_campaign.jpg" alt="Social Media Campaign"
+                                    class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>Marketing Campaign Assets</h4>
+                                    <p>Neon-gradient social posts, Instagram stories &amp; campaign posters.</p>
+                                    <div class="project-tags">
+                                        <span>Graphic Design</span><span>Photoshop</span><span>Canva</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-brands fa-behance"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- Graphic Design 3: Coming Soon -->
+                        <div class="portfolio-item card-glass" data-category="graphic" style="display:none">
+                            <div class="portfolio-thumb">
+                                <div class="portfolio-card-bg"
+                                    style="background: linear-gradient(135deg, #1f1c2c, #928dab); display: flex; align-items: center; justify-content: center; height: 220px;">
+                                    <div class="portfolio-thumb-inner" style="text-align: center;">
+                                        <i class="fa-solid fa-hourglass-half portfolio-project-icon" style="font-size: 2.2rem; color: rgba(255,255,255,0.6); margin-bottom: 8px;"></i>
+                                        <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em;">Coming Soon</div>
+                                    </div>
+                                </div>
+                                <div class="project-info-overlay">
+                                    <h4>Branding Campaign</h4>
+                                    <p>A new visual campaign identity suite currently under creative direction.</p>
+                                    <div class="project-tags">
+                                        <span>Art Direction</span><span>Illustrator</span><span>Branding</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-lock"></i></div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications 1: Udemy Webflow -->
+                        <a href="assets/udemy_webflow_cert.jpg" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="certificates" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/udemy_webflow_cert.jpg"
+                                    alt="Figma to Webflow to Freelance Udemy Certificate" class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>Figma to Webflow to Freelance</h4>
+                                    <p>Comprehensive course on Udemy created and taught by Vako Shvili.</p>
+                                    <div class="project-tags">
+                                        <span>Webflow</span><span>Figma</span><span>Freelance</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- Certifications 2: Framer Pro -->
+                        <a href="assets/framer_pro_cert.jpg" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="certificates" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/framer_pro_cert.jpg" alt="Become Framer PRO in 2026 Certificate"
+                                    class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>Become Framer PRO in 2026</h4>
+                                    <p>Create &amp; Launch No Code Websites. Prototyping course by Divyanshu Singh.</p>
+                                    <div class="project-tags">
+                                        <span>Framer</span><span>No Code</span><span>Web Design</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- Certifications 3: AWS Cloud -->
+                        <a href="assets/aws_cloud_cert.jpg" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="certificates" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/aws_cloud_cert.jpg" alt="AWS Cloud Practitioner Certificate"
+                                    class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>AWS Cloud Practitioner</h4>
+                                    <p>Official Amazon Web Services certification in Cloud Infrastructure &amp;
+                                        Computing.</p>
+                                    <div class="project-tags">
+                                        <span>AWS Cloud</span><span>Cloud Computing</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- Certifications 4: Juniper Automation & DevOps -->
+                        <a href="assets/juniper_devops_cert.png" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="certificates" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/juniper_devops_cert.png" alt="Juniper JNCAA Automation & DevOps Certificate"
+                                    class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>JNCAA - Automation &amp; DevOps Associate</h4>
+                                    <p>Official Juniper Education Services Certificate of Attendance for JNCIA-DevOps.</p>
+                                    <div class="project-tags">
+                                        <span>Juniper</span><span>DevOps</span><span>Automation</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            </div>
+                        </a>
+
+                        <!-- Certifications 5: Google Antigravity Udemy -->
+                        <a href="assets/udemy_antigravity_cert.png" target="_blank" rel="noopener noreferrer"
+                            class="portfolio-item card-glass" data-category="certificates" style="display:none">
+                            <div class="portfolio-thumb">
+                                <img src="assets/udemy_antigravity_cert.png" alt="Google Antigravity Certificate of Completion"
+                                    class="portfolio-thumb-img" />
+                                <div class="project-info-overlay">
+                                    <h4>Google Antigravity: Master Vibe Coding</h4>
+                                    <p>Certificate of Completion for Google Antigravity &amp; Agentic Development.</p>
+                                    <div class="project-tags">
+                                        <span>Antigravity</span><span>Agentic Dev</span><span>AI</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-more-actions">
+                    <a href="https://behance.net/" target="_blank" class="btn btn-secondary">
+                        <span>More Designs on Behance</span>
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Services Section -->
+        <section id="services" class="services-section scroll-reveal">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">Expertise</span>
+                    <h2>Key Services &amp; Focus Areas</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- UI/UX Design -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>UI &amp; UX Design</h3>
+                        <p>User-centric interface design, interactive prototyping, wireframing, and clean visual design
+                            systems that convert visitors into loyal users.</p>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>End-to-end web application development with React, Next.js, and Node.js. Fast, scalable, and
+                            pixel-perfect builds from design to deployment.</p>
+                    </div>
+
+                    <!-- Graphic Design -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Graphic Design</h3>
+                        <p>Stunning digital visual assets, marketing layouts, social media graphics, and presentation
+                            decks that make brands impossible to ignore.</p>
+                    </div>
+
+                    <!-- Video Editing -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-film"></i></div>
+                        <h3>Video Editing</h3>
+                        <p>High-end video post-production, dynamic cuts, motion graphics, color grading, and visual
+                            storytelling optimized for engagement and conversion.</p>
+                    </div>
+
+                    <!-- Photography -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                        <h3>Photography</h3>
+                        <p>Professional photography for commercial, product, and portrait shoots. Expert lighting,
+                            composition, and post-processing for premium visuals.</p>
+                    </div>
+
+                    <!-- Cloud Architecture -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <h3>Cloud Architecture</h3>
+                        <p>AWS and GCP cloud solutions, microservices, serverless deployments, and DevOps CI/CD
+                            pipelines for scalable, resilient infrastructure.</p>
+                    </div>
+
+                    <!-- Branding -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+                        <h3>Branding</h3>
+                        <p>Logos, custom color systems, typography hierarchies, brand style guides, and unified
+                            corporate identity that tells your story consistently.</p>
+                    </div>
+
+                    <!-- AI Specialist -->
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI Specialist</h3>
+                        <p>Integrating LLMs, generative AI, and ML models into products. Building AI-powered pipelines,
+                            prompt engineering, and smart creative solutions.</p>
+                    </div>
+                    <div class="card-glass service-card">
+                        <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Content Creation</h3>
+                        <p>Strategic copywriting, blog posts, social media content, and multimedia storytelling crafted
+                            to engage audiences and boost brand presence.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands / Tech Stack Marquee -->
+        <section id="brands" class="brands-section scroll-reveal">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">&amp; so far...</span>
+                    <h2>Tech I've Worked With</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <!-- Row 1: Scrolling Left -->
+                <div class="marquee-container">
+                    <div class="marquee-track marquee-left">
+                        <div class="brand-logo"><span>Figma</span></div>
+                        <div class="brand-logo"><span>Framer</span></div>
+                        <div class="brand-logo"><span>Webflow</span></div>
+                        <div class="brand-logo"><span>HTML5</span></div>
+                        <div class="brand-logo"><span>CSS3</span></div>
+                        <div class="brand-logo"><span>JavaScript</span></div>
+                        <div class="brand-logo"><span>Python</span></div>
+                        <div class="brand-logo"><span>AWS Cloud</span></div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="brand-logo"><span>Figma</span></div>
+                        <div class="brand-logo"><span>Framer</span></div>
+                        <div class="brand-logo"><span>Webflow</span></div>
+                        <div class="brand-logo"><span>HTML5</span></div>
+                        <div class="brand-logo"><span>CSS3</span></div>
+                        <div class="brand-logo"><span>JavaScript</span></div>
+                        <div class="brand-logo"><span>Python</span></div>
+                        <div class="brand-logo"><span>AWS Cloud</span></div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Scrolling Right -->
+                <div class="marquee-container" style="margin-top: 24px;">
+                    <div class="marquee-track marquee-right">
+                        <div class="brand-logo"><span>Canva</span></div>
+                        <div class="brand-logo"><span>DaVinci Resolve</span></div>
+                        <div class="brand-logo"><span>Adobe Photoshop</span></div>
+                        <div class="brand-logo"><span>Adobe Illustrator</span></div>
+                        <div class="brand-logo"><span>CapCut</span></div>
+                        <div class="brand-logo"><span>VN Video Editor</span></div>
+                        <div class="brand-logo"><span>Adobe Lightroom</span></div>
+                        <div class="brand-logo"><span>PicsArt</span></div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="brand-logo"><span>Canva</span></div>
+                        <div class="brand-logo"><span>DaVinci Resolve</span></div>
+                        <div class="brand-logo"><span>Adobe Photoshop</span></div>
+                        <div class="brand-logo"><span>Adobe Illustrator</span></div>
+                        <div class="brand-logo"><span>CapCut</span></div>
+                        <div class="brand-logo"><span>VN Video Editor</span></div>
+                        <div class="brand-logo"><span>Adobe Lightroom</span></div>
+                        <div class="brand-logo"><span>PicsArt</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-title scroll-reveal">
+                    <span class="sub-title">Get In Touch</span>
+                    <h2>Contact Information</h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="contact-grid scroll-reveal stagger-1">
+                    <div class="contact-info">
+                        <h3>Let's build something <br class="mobile-br">great together</h3>
+                        <p class="contact-lead">Have an upcoming project, job opportunity, or collaboration idea? Reach
+                            out and let's craft something extraordinary together.</p>
+
+                        <div class="contact-details-list">
+                            <div class="details-item card-glass">
+                                <div class="item-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="item-content">
+                                    <span>Phone / WhatsApp</span>
+                                    <a href="tel:+9779823089616">+977 9823089616</a>
+                                </div>
+                            </div>
+
+                            <div class="details-item card-glass">
+                                <div class="item-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="item-content">
+                                    <span>Direct Email</span>
+                                    <a href="mailto:sudhir.rit2021@gmail.com">sudhir.rit2021@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="details-item card-glass">
+                                <div class="item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="item-content">
+                                    <span>Location</span>
+                                    <p>Kathmandu, Nepal — Open to Remote &amp; Relocation</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/sudhirshah0" target="_blank" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sudhir-sah/" target="_blank" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/sudhirdesign.in/" target="_blank"
+                                aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.behance.net/sudhirsah10" target="_blank" aria-label="Behance"><i
+                                    class="fa-brands fa-behance"></i></a>
+                            <a href="https://wa.me/9779823089616" target="_blank" aria-label="WhatsApp"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrap card-glass">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form" action="#" method="POST">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required
+                                        placeholder="e.g. john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required
+                                    placeholder="Project consultation, Job offer, etc.">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    placeholder="Hi Sudhir, I have an opportunity..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-block">Send Message <i
+                                    class="fa-regular fa-paper-plane"></i></button>
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thank You Banner -->
+            <section id="thank-you" class="thank-you-section scroll-reveal">
+                <div class="thank-you-glow-backdrop"></div>
+                <div class="thank-you-container">
+                    <h2 class="thank-you-title">
+                        Thank You
+                    </h2>
+                    <p class="thank-you-desc">Let's collaborate and turn your vision into a living digital masterpiece.
+                    </p>
+
+                    <div class="thank-you-sparks">
+                        <span class="spark s1">✦</span>
+                        <span class="spark s2">✦</span>
+                        <span class="spark s3">✦</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Sudhir Sah. All rights reserved. Crafted with passion.</p>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp FAB -->
+    <a href="https://wa.me/9779823089616" target="_blank" id="whatsapp-fab" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
