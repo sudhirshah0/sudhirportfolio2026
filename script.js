@@ -23,24 +23,31 @@ window.addEventListener('load', () => {
         document.body.style.overflow = '';
         window.scrollTo(0, 0);
         initScrollReveal();
-    }, 1800);
+    }, 800);
 
     document.body.style.overflow = 'hidden';
 });
 
 // ============================================
-// DAY / DARK MODE TOGGLE
+// DAY / DARK MODE TOGGLE (Dark Mode Default)
 // ============================================
 (function () {
     const toggleBtn = document.getElementById('theme-toggle');
     if (!toggleBtn) return;
 
+    // Ensure dark mode is active by default
     const savedTheme = localStorage.getItem('portfolioTheme');
     if (savedTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
         const icon = toggleBtn.querySelector('i');
         if (icon) {
             icon.className = 'fa-solid fa-sun';
+        }
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+            icon.className = 'fa-solid fa-moon';
         }
     }
 
