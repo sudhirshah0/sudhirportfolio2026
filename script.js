@@ -676,33 +676,10 @@ function initScrollReveal() {
             });
 
             form.reset();
-
-            if (feedback) {
-                feedback.className = 'form-feedback success';
-                feedback.innerHTML = `
-                    <div class="success-title">Message Sent!</div>
-                    <div class="success-desc">✓ Thank you! I'll get back to you within 24 hours.</div>
-                `;
-                setTimeout(() => {
-                    feedback.className = 'form-feedback';
-                    feedback.innerHTML = '';
-                }, 6000);
-            }
-
             openModal();
         } catch (err) {
             console.error('Error submitting form:', err);
-            if (feedback) {
-                feedback.className = 'form-feedback error';
-                feedback.innerHTML = `
-                    <div class="error-title">Submission Failed</div>
-                    <div class="error-desc">Please try again or reach out directly via email.</div>
-                `;
-                setTimeout(() => {
-                    feedback.className = 'form-feedback';
-                    feedback.innerHTML = '';
-                }, 6000);
-            }
+            openModal();
         } finally {
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
