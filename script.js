@@ -617,12 +617,46 @@ function initScrollReveal() {
 })();
 
 // ============================================
-// CONTACT FORM (Mock Submit)
+// CONTACT FORM (Google Form Submit)
 // ============================================
 (function () {
     const form = document.getElementById('contact-form');
     const feedback = document.getElementById('form-feedback');
-    if (!form || !feedback) return;
+    const modal = document.getElementById('contact-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const modalOkBtn = document.getElementById('modal-ok-btn');
+
+    if (!form) return;
+
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9A81t6SsOak9x4qArBV8gGir9-3hLOPjTxH7mqpMTICEgNw/formResponse';
+
+    function openModal() {
+        if (!modal) return;
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+    if (modalOkBtn) modalOkBtn.addEventListener('click', closeModal);
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -632,24 +666,47 @@ function initScrollReveal() {
         submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Simulate async send
-        await new Promise(resolve => setTimeout(resolve, 1800));
+        const formData = new FormData(form);
 
-        feedback.className = 'form-feedback success';
-        feedback.innerHTML = `
-            <div class="success-title">Message Sent!</div>
-            <div class="success-desc">✓ I'll get back to you within 24 hours.</div>
-        `;
+        try {
+            await fetch(GOOGLE_FORM_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            });
 
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
+            form.reset();
 
-        form.reset();
+            if (feedback) {
+                feedback.className = 'form-feedback success';
+                feedback.innerHTML = `
+                    <div class="success-title">Message Sent!</div>
+                    <div class="success-desc">✓ Thank you! I'll get back to you within 24 hours.</div>
+                `;
+                setTimeout(() => {
+                    feedback.className = 'form-feedback';
+                    feedback.innerHTML = '';
+                }, 6000);
+            }
 
-        setTimeout(() => {
-            feedback.className = 'form-feedback';
-            feedback.innerHTML = '';
-        }, 6000);
+            openModal();
+        } catch (err) {
+            console.error('Error submitting form:', err);
+            if (feedback) {
+                feedback.className = 'form-feedback error';
+                feedback.innerHTML = `
+                    <div class="error-title">Submission Failed</div>
+                    <div class="error-desc">Please try again or reach out directly via email.</div>
+                `;
+                setTimeout(() => {
+                    feedback.className = 'form-feedback';
+                    feedback.innerHTML = '';
+                }, 6000);
+            }
+        } finally {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
     });
 })();
 
