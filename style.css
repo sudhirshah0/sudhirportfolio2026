@@ -190,6 +190,33 @@
     drop-shadow: none !important;
 }
 
+/* Modal Light Mode Overrides */
+[data-theme="light"] .modal-overlay {
+    background: rgba(240, 248, 255, 0.75);
+}
+
+[data-theme="light"] .modal-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 140, 220, 0.15);
+}
+
+[data-theme="light"] .modal-title {
+    color: #0a0e1a;
+}
+
+[data-theme="light"] .modal-desc {
+    color: rgba(10, 14, 26, 0.75);
+}
+
+[data-theme="light"] .modal-close {
+    color: rgba(10, 14, 26, 0.5);
+}
+
+[data-theme="light"] .modal-close:hover {
+    color: #0a0e1a;
+}
+
 /* Theme Toggle Button */
 .theme-toggle-btn {
     width: 38px;
@@ -3344,9 +3371,40 @@ footer p {
 }
 
 .modal-btn {
-    width: 100%;
-    padding: 12px 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 12px 36px;
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 12px;
+    border-radius: 50px;
+    min-width: 140px;
+}
+
+@media (max-width: 480px) {
+    .modal-card {
+        padding: 32px 20px 24px;
+        border-radius: 16px;
+    }
+
+    .modal-icon {
+        font-size: 2.8rem;
+        margin-bottom: 12px;
+    }
+
+    .modal-title {
+        font-size: 1.35rem;
+    }
+
+    .modal-desc {
+        font-size: 0.88rem;
+        margin-bottom: 20px;
+    }
+
+    .modal-btn {
+        padding: 10px 28px;
+        font-size: 0.9rem;
+        min-width: 120px;
+    }
 }
