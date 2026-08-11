@@ -2260,6 +2260,44 @@ a.portfolio-item {
     transition: var(--transition);
 }
 
+.portfolio-open-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 6px 14px;
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(0, 210, 255, 0.4);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: var(--transition);
+    z-index: 5;
+}
+
+.portfolio-open-btn i {
+    color: var(--accent);
+    font-size: 0.75rem;
+    transition: transform 0.25s ease;
+}
+
+.portfolio-item:hover .portfolio-open-btn {
+    background: var(--accent);
+    color: #050810;
+    border-color: var(--accent);
+    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.4);
+}
+
+.portfolio-item:hover .portfolio-open-btn i {
+    color: #050810;
+    transform: translate(2px, -2px);
+}
+
 .portfolio-item:hover .portfolio-icon {
     opacity: 1;
     transform: scale(1);
